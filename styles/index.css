@@ -36,7 +36,7 @@ header .branding {
 header nav {
     background-color: black;
 }
-
+    
 header ul {
     display: flex;
     list-style-type: none;

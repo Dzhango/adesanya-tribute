@@ -1,8 +1,9 @@
+
+//images array global, images are created dynamically
 const images = ["knee", "dance", "awards", "face-off", "champion", "flag"];
 const imgs = document.querySelector(".imgs");
 const mainImg = document.querySelector(".img-main");
 
-//images array global, images are created dynamically
 
 function displayImg(arr){
     // main img
@@ -27,6 +28,7 @@ function imgClick(el){
 
     current.classList.add("fade-in");
 
+    //give half a second for transition
     setTimeout(() => current.classList.remove("fade-in"), 500);
 
     el.target.style.opacity = opacity;
@@ -39,13 +41,3 @@ const imgArr = document.querySelectorAll(".imgs img");
 imgArr.forEach(element => {
     element.addEventListener('click', imgClick);
 });
-
-
-
-
-
-// Think about retrieving answer and which data structure would be the best for searching and comparing
-
-// Secondary: Implement class for responsive design of input block
-
-// ajax function for check input without reloading the page
