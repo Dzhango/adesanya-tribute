@@ -1,0 +1,200 @@
+body {
+  font: 12px/1.5 "Trebuchet MS", Helvetica, sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+ul, h1, h2, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+} 
+
+/* Header */
+
+header{
+    color: white;
+    text-align: center;
+    min-height: 900px;
+    background: url("../media/background.jpg") no-repeat center center;
+    margin-bottom: 2em;
+}
+
+header .branding {
+    margin-top: 4em;
+    padding: 8em 0em;
+    font-weight: 200;
+    font-size: 2.5em;
+    line-height: 2em;
+}
+
+.branding p {
+    font-size: 0.67em;
+}
+
+header nav {
+    background-color: black;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding: 2em;
+}
+
+header .logo {
+    color: white;
+    font-weight: 200; 
+    font-size: 1.5em;
+    font-stretch: wider;
+    font-family: Trattatello, fantasy; 
+}
+
+/* MAIN */
+
+.container{
+    width: 70%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.grid-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.container img {
+    width: 100%;
+}
+
+.img-column {
+    margin-top: 3.5em;
+    margin-left: 4em;
+}
+
+.paragraph-2 {
+    margin-top: 4em;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    margin: 4em;
+}
+
+.link-container div{
+    padding: 1em;
+    background-color:#D3D3D3;
+    margin: 1em;
+}
+
+.link-container a {
+    text-decoration: none;
+    margin: 0.5em;
+    color: black;
+}
+
+#quote .container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2em 0em;
+    font-family: fantasy; 
+    font-size: 1.3em;
+}
+
+#recent-fights .container {
+    text-align: center;
+    width: 100%;
+}
+
+.video-wrapper {
+    background-color: black;
+    z-index: -1;;
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    object-fit: fill;
+  }
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 2em; 
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.author-content {
+    padding: 1.5em; 
+}
+
+.author-content a:visited {
+    color: lightskyblue;
+}
+/* Media queries */
+
+@media(max-width: 760px) {
+    /* HEADER, NAV */
+    header {
+        background: url("../media/sm-background.jpg") no-repeat center center;
+    }
+    
+    header nav{
+        background-color: black;
+        width: 100%;
+    }
+
+    header .branding {
+        font-size: 2em;
+    }
+
+    /* MAIN */
+
+    .container{
+        width: 90%;
+        margin:auto;
+        overflow:hidden;
+    }
+
+    .grid-wrapper {
+        display: unset;
+    }
+
+    .paragraph-2 {
+        margin-top: 2em;
+    }
+    
+    .img-column {
+        margin: 2em 0;
+    }
+
+    .link-container{
+        margin: 2em 0;
+    }
+
+    #quote .container {
+        padding: 2em -1em;
+        width: 100%;
+    }
+
+    #myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
